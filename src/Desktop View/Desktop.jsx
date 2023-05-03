@@ -12,9 +12,9 @@ const useStyles = makeStyles({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100vh',
-    // '@media (max-width: 600px)': {
-    //   backgroundImage: 'url("your-image-url-for-small-screens")',
-    //  },
+     '@media (max-width: 600px)': {
+      backgroundImage: 'url("/src/assets/home/background-home-tablet.jpg")',
+      },
   },
 });
 

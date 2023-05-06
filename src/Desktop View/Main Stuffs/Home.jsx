@@ -9,15 +9,24 @@ function Home() {
     direction={{sm:'column', lg:'row'}} 
     sx={{
         padding:{
+            sm:'30px',
             lg:'80px'
-        }
+        },
+        alignItems:'center'
+        
     }}
     spacing={{
+        sm:18,
         lg:72
     }}
      >
 
-        <Stack sx={{width:'40%'}}>
+        <Stack sx={{
+            width:{
+                sm:'80%',
+                lg:'40%'
+            }
+            }}>
 
             <Typography  variant='h5' fontSize='2rem'> SO, YOU WANT TO TRAVEL TO </Typography>
 

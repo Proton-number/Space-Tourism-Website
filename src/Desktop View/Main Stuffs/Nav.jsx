@@ -3,6 +3,7 @@ import { Box, Paper, Typography, Stack,  createTheme, ThemeProvider ,Button, Ico
 import logo from "/src/assets/shared/logo.svg"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
 
 
 const theme = createTheme({
@@ -89,7 +90,8 @@ function Nav() {
             }}
             >
 
-           <Stack 
+          <Link to={'/'} style={{textDecoration:'none', color:'white'}}>
+          <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
            spacing={{
@@ -100,9 +102,11 @@ function Nav() {
             <Typography><b>00</b></Typography>
            <Typography>  HOME </Typography>
            </Stack>
+          </Link>
 
-
-           <Stack 
+         
+         <Link to={'Destination'} style={{textDecoration:'none', color:'white'}}>
+         <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
            spacing={{
@@ -113,7 +117,11 @@ function Nav() {
            <Typography>  DESTINATION  </Typography>
            </Stack>
 
-           <Stack 
+         </Link>
+
+        
+        <Link to={'Crew'} style={{textDecoration:'none', color:'white'}}>
+        <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
            spacing={{
@@ -123,7 +131,10 @@ function Nav() {
             <Typography><b>02</b></Typography>
            <Typography>   CREW </Typography>
            </Stack>
+        </Link>
+           
 
+           <Link to={'Technology'} style={{textDecoration:'none', color:'white'}}>
            <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
@@ -134,8 +145,10 @@ function Nav() {
             <Typography> <b>03</b></Typography>
            <Typography> TECHNOLOGY </Typography>
            </Stack>
+           </Link>
 
             </Stack>
+        
 
          </Stack>
 
@@ -168,10 +181,26 @@ function Nav() {
 
 <Stack spacing={6} style={{textTransform:'uppercase', padding:'100px' }}>
 
-  <Typography fontSize='30px'>Home</Typography>
+
+      <Link to={'/'} style={{textDecoration:'none', color:'white'}}>
+     <Typography fontSize='30px'>Home</Typography>
+     </Link>
+
+
+     <Link to={'Destination'} style={{textDecoration:'none', color:'white'}}>
   <Typography fontSize='30px'>Destination</Typography>
+     </Link>
+
+     <Link to={'Crew'} style={{textDecoration:'none', color:'white'}}>
   <Typography fontSize='30px'>Crew</Typography>
+     </Link>
+
+     <Link to={'Technology'} style={{textDecoration:'none', color:'white'}}>
   <Typography fontSize='30px'>Technology</Typography>
+     </Link>
+
+
+
 
 
     </Stack>

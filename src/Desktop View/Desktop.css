@@ -2,6 +2,9 @@
     display: none;
 }
 
+#desktopNav2{
+    display: none;
+   }
 
 @media screen and (min-width:600px) {
     
@@ -9,5 +12,21 @@
         display: block;
     }
 
+ }
+
+
+ Link{
+    
+ }
+
  
+@media screen and (min-width:600px) and (max-width:800px) {
+    
+    #desktopNav2{
+        display: block;
+       }
+    
+ #desktopNav{
+    display: none;
+}
  }

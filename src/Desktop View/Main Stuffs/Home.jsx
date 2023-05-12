@@ -1,9 +1,14 @@
 import React from 'react'
 import { Box, Paper, Typography, Stack} from '@mui/material'
+import desktopBackground from '/src/assets/home/background-home-desktop.jpg'
+import tabletBackground from "/src/assets/home/background-home-tablet.jpg"
+import Nav from './Nav'
 
 function Home() {
   return (
     <>
+                <Nav />
+
 
     <Stack 
     direction={{sm:'column', lg:'row'}} 
@@ -12,8 +17,15 @@ function Home() {
             sm:'30px',
             lg:'80px'
         },
-        alignItems:'center'
-        
+        alignItems:'center',
+          backgroundImage:{
+           sm:  `url(${tabletBackground})`,
+              lg: `url(${desktopBackground})`
+             },
+           backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+           backgroundPosition: 'center',
+            height: '100vh',
     }}
     spacing={{
         sm:18,
@@ -21,12 +33,14 @@ function Home() {
     }}
      >
 
+
         <Stack sx={{
             width:{
                 sm:'80%',
                 lg:'40%'
             }
             }}>
+
 
             <Typography  variant='h5' fontSize='2rem'> SO, YOU WANT TO TRAVEL TO </Typography>
 

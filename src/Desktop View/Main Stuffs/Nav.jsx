@@ -28,7 +28,10 @@ function Nav() {
     <Box
     p={{
         sm:'24px',
-        lg:'70px',
+        lg:'60px',
+    }}
+    sx={{
+      position:'absolute'
     }}
     >
 
@@ -41,7 +44,8 @@ function Nav() {
             lg:80,
                
          }}
-         sx={{position:'relative', alignItems:'center'}} > 
+           sx={{position:'relative', alignItems:'center'}} 
+          > 
 
       <Box>
       <Box component='img' src={logo} />
@@ -105,7 +109,7 @@ function Nav() {
           </Link>
 
          
-         <Link to={'Destination'} style={{textDecoration:'none', color:'white'}}>
+         <Link to={'/Destination'} style={{textDecoration:'none', color:'white'}}>
          <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
@@ -120,7 +124,7 @@ function Nav() {
          </Link>
 
         
-        <Link to={'Crew'} style={{textDecoration:'none', color:'white'}}>
+        <Link to={'/Crew'} style={{textDecoration:'none', color:'white'}}>
         <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
@@ -134,7 +138,7 @@ function Nav() {
         </Link>
            
 
-           <Link to={'Technology'} style={{textDecoration:'none', color:'white'}}>
+           <Link to={'/Technology'} style={{textDecoration:'none', color:'white'}}>
            <Stack 
            direction='row' 
            sx={{alignItems:'center'}}
@@ -187,15 +191,15 @@ function Nav() {
      </Link>
 
 
-     <Link to={'Destination'} style={{textDecoration:'none', color:'white'}}>
+     <Link to={'/Destination'} style={{textDecoration:'none', color:'white'}}>
   <Typography fontSize='30px'>Destination</Typography>
      </Link>
 
-     <Link to={'Crew'} style={{textDecoration:'none', color:'white'}}>
+     <Link to={'/Crew'} style={{textDecoration:'none', color:'white'}}>
   <Typography fontSize='30px'>Crew</Typography>
      </Link>
 
-     <Link to={'Technology'} style={{textDecoration:'none', color:'white'}}>
+     <Link to={'/Technology'} style={{textDecoration:'none', color:'white'}}>
   <Typography fontSize='30px'>Technology</Typography>
      </Link>
 

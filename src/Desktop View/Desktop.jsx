@@ -37,30 +37,30 @@ function Desktop() {
 
 <Box 
 id='desktop-view' 
-sx={{
- backgroundImage:{
-   sm:  `url(${tabletBackground})`,
-   lg: `url(${desktopBackground})`
- },
- backgroundRepeat: 'no-repeat',
- backgroundSize: 'cover',
- backgroundPosition: 'center',
- height: '100vh',
+// sx={{
+//  backgroundImage:{
+//    sm:  `url(${tabletBackground})`,
+//    lg: `url(${desktopBackground})`
+//  },
+//  backgroundRepeat: 'no-repeat',
+//  backgroundSize: 'cover',
+//  backgroundPosition: 'center',
+//  height: '100vh',
  
-}}
+// }}
 >
- <Nav />
+ {/* <Nav /> */}
 
 
  <Routes>
  
        <Route exact path='/' element={<Home/>} />
 
-       <Route exact path='Destination' element={  <Destination />} />
+       <Route exact path='/Destination' element={  <Destination />} />
 
-       <Route exact path='Crew' element={ <Crew />} />
+       <Route exact path='/Crew' element={ <Crew />} />
 
-       <Route exact path='Technology' element={<Technology />} />
+       <Route exact path='/Technology' element={<Technology />} />
 
       </Routes>
 

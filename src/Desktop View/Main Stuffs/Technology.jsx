@@ -107,6 +107,7 @@ function Technology() {
   spacing={{
     lg: 12
   }}
+  // sx={{alignItems:"center"}} 
   >
 
 
@@ -114,17 +115,17 @@ function Technology() {
          value={activeButton}
          exclusive
          onChange={handleButtonClick}
-         style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}
+        sx={{flexDirection:"column", justifyContent:"space-around"}}
        >
-         <MotionButton onClick={handleOneClick}  whileHover={{opacity:1}} value={1} style={{ backgroundColor: 'white', opacity: activeButton === 1 ? 1 : 0.5, width: 50, height: 50, borderRadius: '50%', margin: '0 10px' }}> 1 </MotionButton>
+         <MotionButton onClick={handleOneClick}  whileHover={{opacity:1}} value={1} style={{ backgroundColor: activeButton === 1 ? 'white' : "rgba(0, 0, 0, 0.5)", width: 50, height: 50, borderRadius: '50%', margin: '0 10px', color: activeButton === 1 ? "black" : "white" }}> 1 </MotionButton>
 
-         <MotionButton onClick={handleTwoClick} whileHover={{opacity:1}} value={2} style={{ backgroundColor: 'white', opacity: activeButton === 2 ? 1 : 0.5, width: 50, height: 50, borderRadius: '50%', margin: '0 10px' }}>2</MotionButton>
+         <MotionButton onClick={handleTwoClick} whileHover={{opacity:1}} value={2} style={{ backgroundColor: activeButton === 2 ? 'white' : "rgba(0, 0, 0, 0.5)", width: 50, height: 50, borderRadius: '50%', margin: '0 10px', color: activeButton === 2 ? "black" : "white" }}>2</MotionButton>
 
-         <MotionButton onClick={handleThreeClick} whileHover={{opacity:1}} value={3} style={{ backgroundColor: 'white', opacity: activeButton === 3 ? 1 : 0.5, width: 50, height: 50, borderRadius: '50%', margin: '0 10px' }}>3</MotionButton>
+         <MotionButton onClick={handleThreeClick} whileHover={{opacity:1}} value={3} style={{ backgroundColor: activeButton === 3 ? 'white' : "rgba(0, 0, 0, 0.5)", width: 50, height: 50, borderRadius: '50%', margin: '0 10px', color: activeButton === 3 ? "black" : "white" }}>3</MotionButton>
 
        </ToggleButtonGroup>
 
-     <Stack spacing={{lg:2}}>
+     <Stack spacing={{lg:1}}>
 
          <Typography sx={{opacity:0.5}} >THE TERMINOLOGY...</Typography>
 
@@ -146,10 +147,10 @@ opacity:0.5
      src={images[currentIndex]} 
      sx={{
          width:{
-             lg:'100%'
+             lg:'40%'
          },
          height:{
-            lg:"100%"
+            lg:"auto"
          }
      }} />
 

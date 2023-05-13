@@ -125,10 +125,10 @@ function Crew() {
          onChange={handleButtonClick}
          style={{ display: 'flex' }}
        >
-         <MotionButton onClick={firstHandleClick}  whileHover={{opacity:1}} value={1} style={{ backgroundColor: 'white', opacity: activeButton === 1 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
-         <MotionButton onClick={secondHandleClick} whileHover={{opacity:1}} value={2} style={{ backgroundColor: 'white', opacity: activeButton === 2 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
-         <MotionButton onClick={thirdHandleClick} whileHover={{opacity:1}} value={3} style={{ backgroundColor: 'white', opacity: activeButton === 3 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
-         <MotionButton onClick={fourthHandleClick} whileHover={{opacity:1}} value={4} style={{ backgroundColor: 'white', opacity: activeButton === 4 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
+         <MotionButton onClick={firstHandleClick}  whileHover={{opacity:activeButton === 1 ? 1 : .4, backgroundColor:"white"}} value={1} style={{ backgroundColor: activeButton === 1 ? 'white' : "rgba(0, 0, 0, 0.95)", opacity: activeButton === 1 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
+         <MotionButton onClick={secondHandleClick} whileHover={{opacity:activeButton === 2 ? 1 : .4, backgroundColor:"white"}} value={2} style={{ backgroundColor: activeButton === 2 ? 'white' : "rgba(0, 0, 0, 0.95)", opacity: activeButton === 2 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
+         <MotionButton onClick={thirdHandleClick} whileHover={{opacity:activeButton === 3 ? 1 : .4, backgroundColor:"white"}} value={3} style={{backgroundColor: activeButton === 3 ? 'white' : "rgba(0, 0, 0, 0.95)", opacity: activeButton === 3 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
+         <MotionButton onClick={fourthHandleClick} whileHover={{opacity:activeButton === 4 ? 1 : .4, backgroundColor:"white"}} value={4} style={{ backgroundColor: activeButton === 4 ? 'white' : "rgba(0, 0, 0, 0.95)", opacity: activeButton === 4 ? 1 : 0.5, width: 30, height: 30, borderRadius: '50%', margin: '0 10px' }} />
        </ToggleButtonGroup>
 
  </Stack>

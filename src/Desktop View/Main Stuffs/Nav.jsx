@@ -26,12 +26,11 @@ function Nav() {
 
   return (
     <Box
-    p={{
-        sm:'24px',
-        lg:'60px',
-    }}
     sx={{
-      position:'absolute'
+      position:'absolute',
+     padding:{
+      lg: "30px 12px" 
+     }
     }}
     >
 
@@ -90,7 +89,8 @@ function Nav() {
                 lg:'24px'
             },
                 backgroundColor:'rgba(255, 255, 255, 0.04)',
-                backdropFilter: 'blur(81.5485px)'
+                backdropFilter: 'blur(81.5485px)',
+              
             }}
             >
 

@@ -10,7 +10,7 @@ function App() {
   
   const theme = createTheme({
     typography:{
-      fontFamily: `'Barlow Condensed', sans-serif`,
+      fontFamily:`'Barlow Condensed' sans-serif`
     }
   })
 
